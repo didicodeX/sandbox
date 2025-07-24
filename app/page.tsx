@@ -1,5 +1,6 @@
 import { getSession } from "@/lib/auth-session";
 import { redirect } from "next/navigation";
+import { Button } from "./components/ui/button";
 
 export default async function Home() {
   const session = await getSession();
@@ -10,6 +11,7 @@ export default async function Home() {
   return (
     <div className="text-wrap">
       <pre>{JSON.stringify(user, null, 2)}</pre>
+      <Button><a href="/create-project">Create Project</a></Button>
     </div>
   );
 }
