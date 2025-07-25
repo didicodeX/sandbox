@@ -12,6 +12,7 @@ export default async function Home() {
     <div className="text-wrap">
       <pre>{JSON.stringify(user, null, 2)}</pre>
       <Button><a href="/create-project">Create Project</a></Button>
+      <pre>{JSON.stringify(session?.limitations, null, 2)}</pre>
     </div>
   );
 }

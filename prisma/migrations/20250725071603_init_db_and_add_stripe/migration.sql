@@ -5,6 +5,7 @@ CREATE TABLE "user" (
     "email" TEXT NOT NULL,
     "emailVerified" BOOLEAN NOT NULL,
     "image" TEXT,
+    "stripeCustomerId" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
